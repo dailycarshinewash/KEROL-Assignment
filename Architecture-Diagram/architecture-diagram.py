@@ -15,8 +15,8 @@ from diagrams.onprem.compute import Server
 #######################################################
 title = "nginxdemo"
 outformat = "png"
-filename = "out/nginxdemo"
-filenamegraph = "out/nginxdemo.gv"
+filename = "nginxdemo"
+filenamegraph = "nginxdemo.gv"
 show = False
 direction = "LR"
 smaller = "0.8"
