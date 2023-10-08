@@ -13,10 +13,10 @@ from diagrams.onprem.compute import Server
 #######################################################
 # Setup Some Input Variables for Easier Customization #
 #######################################################
-title = "diagrams-as-code-aws-vpc-example"
+title = "nginxdemo"
 outformat = "png"
-filename = "out/diagrams-as-code-aws-vpc-example"
-filenamegraph = "out/diagrams-as-code-aws-vpc-example.gv"
+filename = "out/nginxdemo"
+filenamegraph = "out/nginxdemo.gv"
 show = False
 direction = "LR"
 smaller = "0.8"
