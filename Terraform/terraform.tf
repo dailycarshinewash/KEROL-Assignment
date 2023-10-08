@@ -7,6 +7,6 @@ terraform {
   backend "s3" {
     bucket = "nginxdemo-statefiles"
     key    = "nginxdemo-devl.tfstate"
-    region = "ap-south-1"
+    region = "us-east-1"
   }
 }
