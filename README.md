@@ -22,3 +22,5 @@ If applicable depends on your chosen approach:
 Use a repository on www.github.com to manage all the code parts of the assignment and provide instructions on how to consume the repository.
 
 --------------------------------------------------------------------
+
+Architecture Diagram.
