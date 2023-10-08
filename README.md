@@ -23,4 +23,22 @@ Use a repository on www.github.com to manage all the code parts of the assignmen
 
 --------------------------------------------------------------------
 
-Architecture Diagram.
+1. Architecture Diagram.
+
+Run Following cmd to create Architecture Diagram,
+
+python Architecture-Diagram\architecture-diagram.py
+
+----------------------------------------------------------------------
+
+2. AWS Infrasturcture
+
+Run Following cmds to create infrastructure,
+
+terraform init
+terraform plan
+terraform apply --auto-approve
+
+Run Following cmd to Delete infrastructure,
+
+terraform destroy --auto-approve
