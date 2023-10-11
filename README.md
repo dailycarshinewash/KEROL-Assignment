@@ -42,3 +42,5 @@ terraform apply --auto-approve
 Run Following cmd to Delete infrastructure,
 
 terraform destroy --auto-approve
+
+958763830955.dkr.ecr.us-east-1.amazonaws.com/nginx-demo-ecr-repo:latest
