@@ -1,13 +1,12 @@
 # KEROL-Assignment
-KEROL-Assignment
--------------------------------------------------------------------------
+
 Implementation of the assignment:
 
 Create the terraform deployment to host a stateless application containerised here:
-https://hub.docker.com/r/nginxdemos/hello/
+<https://hub.docker.com/r/nginxdemos/hello/>
 
 Create the architecture diagram for the deployment using:
-https://github.com/mingrammer/diagrams
+<https://github.com/mingrammer/diagrams>
 
 If applicable depends on your chosen approach:
 
@@ -19,28 +18,34 @@ If applicable depends on your chosen approach:
 6. Depending on how your application is hosted, propose options for securing access to the web application itself.
 7. Create all the public/private networks needed to secure unwanted access from the Internet to the infrastructure hosting the web application.
 
-Use a repository on www.github.com to manage all the code parts of the assignment and provide instructions on how to consume the repository.
+Use a repository on <www.github.com> to manage all the code parts of the assignment and provide instructions on how to consume the repository.
 
 --------------------------------------------------------------------
 
-1. Architecture Diagram.
+# 1. Architecture Diagram.
 
 Run Following cmd to create Architecture Diagram,
 
+```
 python Architecture-Diagram\architecture-diagram.py
+```
 
 ----------------------------------------------------------------------
 
-2. AWS Infrasturcture
+# 2. AWS Infrasturcture
 
 Run Following cmds to create infrastructure,
+```
+terraform init 
+terraform plan -var-file='nginxdemos-devl.tfvar'
+terraform apply -var-file='nginxdemos-devl.tfvar' --auto-approve
+```
 
-terraform init
-terraform plan
-terraform apply --auto-approve
 
 Run Following cmd to Delete infrastructure,
 
-terraform destroy --auto-approve
+```
+terraform destroy -var-file='nginxdemos-devl.tfvar' --auto-approve
 
-958763830955.dkr.ecr.us-east-1.amazonaws.com/nginx-demo-ecr-repo:latest
+```
+
