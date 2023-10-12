@@ -34,7 +34,10 @@ python Architecture-Diagram\architecture-diagram.py
 
 # 2. AWS Infrasturcture
 
+Add required variable in .tfvar file like, vpc_id, subnet_ids, container_image etc.
+
 Run Following cmds to create infrastructure,
+
 ```
 terraform init 
 terraform plan -var-file='nginxdemos-devl.tfvar'
