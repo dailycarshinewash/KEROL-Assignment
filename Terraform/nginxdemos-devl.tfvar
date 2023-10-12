@@ -19,7 +19,7 @@ container_image = "958763830955.dkr.ecr.us-east-1.amazonaws.com/nginxdemo-ecr:la
 #public.ecr.aws/nginx/nginx:latest
 
 #958763830955.dkr.ecr.us-east-1.amazonaws.com/nginxdemo-ecr:latest
-container_memory = 512
+container_memory = 256
 
 
 container_memory_reservation = 128
