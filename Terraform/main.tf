@@ -122,7 +122,7 @@ module "ecs_alb_service_task" {
   name                               = "bastion"
   attributes                         = ["publics"]
   delimiter                          = "-"
-  alb_security_group                 = var.alb_security_group
+  alb_security_group                 = module.alb.security_group_id
   container_definition_json          = module.container_definition.json_map_encoded_list
   ecs_cluster_arn                    = aws_ecs_cluster.default.arn
   launch_type                        = "FARGATE"
