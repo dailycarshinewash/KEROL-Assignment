@@ -3,15 +3,23 @@ region = "us-east-1"
 project_name = "nginxdemo"
 
 # VPC Module
-vpc_cidr_block = "10.0.0.0/16"
+vpc_id = "vpc-0a89b66e9aa6e6ccc"
+
+subnet_ids = ["subnet-09fe792cd79ca8e43", "subnet-0c90ac821395972d3"]
+
+security_group_ids = ["sg-017c29e373d3b3ee9"]
+
+alb_security_group = "sg-017c29e373d3b3ee9"
 
 # Container Defination
 
 container_name = "nginxdemo"
 
 container_image = "958763830955.dkr.ecr.us-east-1.amazonaws.com/nginxdemo-ecr:latest"
+#public.ecr.aws/nginx/nginx:latest
 
-container_memory = 256
+#958763830955.dkr.ecr.us-east-1.amazonaws.com/nginxdemo-ecr:latest
+container_memory = 512
 
 
 container_memory_reservation = 128

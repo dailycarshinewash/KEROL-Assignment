@@ -9,9 +9,25 @@ variable "project_name" {
 }
 
 
-variable "vpc_cidr_block" {
+variable "vpc_id" {
   type        = string
-  description = "VPC CIDR block"
+  description = "VPC ID"
+}
+
+variable "subnet_ids" {
+  type        = list(string)
+  description = "Subnet IDs"
+}
+
+
+variable "security_group_ids" {
+  type        = list(string)
+  description = "Security group IDs"
+}
+
+variable "alb_security_group" {
+  type        = string
+  description = "alb Security group IDs"
 }
 
 
